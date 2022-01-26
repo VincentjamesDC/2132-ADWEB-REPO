@@ -1,0 +1,45 @@
+<!--
+<h1>{{appName}}</h1> 
+<p>***************************************************************************************</p>
+<h2>{{appName1}}</h2>
+<h3>{{appName2}}</h3> 
+<p>Given the numbers {{nd1}} and {{nd2}}, compute them... <br>
+the sum of {{nd1}} and {{nd2}} is "{{nd1 + nd2}}". <br>
+the diff of {{nd1}} and {{nd2}} is "{{nd2 - nd1}}". <br>
+the prod of {{nd1}} and {{nd2}} is "{{nd1 * nd2}}".<br>
+the quo of {{nd1}} and {{nd2}} is "{{nd2 / nd1}}". <br>
+<br>
+My name is {{fname}} {{miname}} {{lname}} <br>
+My name... last name first is {{lname}}, {{fname}} {{miname}}
+</p>
+<h3>{{appName4}}</h3>
+
+<input type="text" [value]="clientName">
+<br>
+<h3>{{appName3}}</h3>
+<strong><h2 [style.color] = "myColor"> Hello World</h2></strong> 
+<i><h2 [style.color] = "myColor1"> Hello World</h2></i>
+<p [style.color] = "myColor2"> Hello World</p> 
+<strong><h2 [style.color] = "myColor3"> Hello World</h2></strong> 
+<i><strong><h2 [style.color] = "myColor4"> Hello World</h2></strong> </i>
+
+<h3>{{appName5}}</h3>
+<p [class] = "appliedCSSClass">This line applied the style binding</p>
+<p [class.blue] = "notappliedCSSClass">while this line does not</p>
+-->
+<h2>{{nameApp}}</h2>
+<h3> a. Click Event:</h3>
+<button (click) = "showData($event)">Click Mo!!</button> <br> <br>
+<button on-click = "showData($event)">Click Mo Din!!</button>
+
+<h3>b. Using Keyup, Keydown, Blur, Mouse actions</h3>
+<input type="text" #keyupbox placeholder="keyup box" (keyup)= getData(keyupbox.value)/>
+<br> <br>
+<input type="text" #keydownbox placeholder="keydown box" (keydown)= getData(keydownbox.value)/>
+<br> <br>
+<input type="text" #blur placeholder="blur box" (blur)= getData(blur.value)/>
+<br> <br>
+<input type="text" #input placeholder="input box" (input)= getData(input.value)/>
+
+<h3 (mouseover) = "getData('mouse over')"> Hover mouse cursor</h3>
+<h3 (mouseleave) = "getData('mouse leaves')"> Hover mouse cursor</h3>
