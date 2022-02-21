@@ -1,0 +1,21 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.extra_nav{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+h1{
+    padding: 20px;
+    color: #c1c1c1;
+}
+body{
+    background-image: url(../img/Web.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    padding-bottom: 100%;
+}
+

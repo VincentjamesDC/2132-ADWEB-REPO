@@ -1,0 +1,10 @@
+*{
+   background-color: gray;
+   border-color: black;
+}
+h3{
+    padding-top: 20px;
+}
+.error-template{
+    text-align: center;
+}
