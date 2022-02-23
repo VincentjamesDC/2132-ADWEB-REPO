@@ -1,0 +1,11 @@
+<div class="games">
+    <div class="card" style="width: 20rem;" *ngFor="let product of products;">
+        <div class="card-body">
+            <img class="card-text" [src]="product.url" [height]="100"/>
+            <h5 class="card-title">{{product.id}}</h5>
+            <h5 class="card-title">{{product.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{product.price}}</h6>
+            <p class="card-text">{{product.description}}</p>
+        </div>
+    </div>
+</div>
