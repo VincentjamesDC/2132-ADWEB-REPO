@@ -1,0 +1,11 @@
+*{
+    background-color: white;
+}
+.games{
+    background-color: black;
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    gap: 20px;
+
+}

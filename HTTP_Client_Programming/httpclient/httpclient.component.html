@@ -1,0 +1,55 @@
+<p>httpclient works!</p>
+<p style="text-align: center;">REQUIRED 1: Submit a screenshot of the codes and output in a Word or PDF file.  Submit to HTTP Client Programming Discussion Activity.</p>
+    <h3 class=" text-center">Angular - Display a list of items with ngFor: httpclient activity</h3>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of httpusers">
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.website}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<hr>
+
+<p style="text-align: center;">REQUIRED 2: Challenge activity, fetch another source (using JSON), and control or filter the output, e.g. limit the list to 5. <br>
+     Submit a screenshot of both code and output.  Submit to HTTP Client Programming.</p>
+    <h3 class=" text-center">Angular - Display a list of items with ngFor: httpclient activity_Todos</h3>
+    <h4 style="text-align: center;"> <strong>Answer: </strong>I used slice to manipulate the array</h4>
+    <div class="container">
+        
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Completed</th>
+
+            </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let todo of httpusers.slice(0,5)">
+                    <td>{{todo.id}}</td>
+                    <td>{{todo.title}}</td>
+                    <td>{{todo.completed}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+
