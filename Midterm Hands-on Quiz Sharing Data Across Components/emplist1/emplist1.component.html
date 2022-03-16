@@ -1,0 +1,22 @@
+
+<div>
+<h1>Employee list 1</h1>
+<table class="table" >
+    <thead >
+      <tr>
+        <th scope="col" >ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let emps of employees">
+        <th scope="row">{{emps.id}}</th>
+        <td>{{emps.firstname}}</td>
+        <td>{{emps.lastname}}</td>
+        <td>{{emps.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
